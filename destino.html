@@ -1,0 +1,129 @@
+<!DOCTYPE html><html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
+        rel="stylesheet" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link href="css/estilos.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Conoce la esencia de grandes vinos chilenos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tour en Viña Concha y Toro con degustación</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <a class="navbar-brand" href="#"><img src="images/coderhouse.png" alt="Coder"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link" href="index.html">Home    </a>
+                    <a class="nav-link" href="destinos.html">Destinos</a>
+                    <div class="dropdown nav-link navbar-right" >
+                        <a href="login.html" class="dropbtn nav-color" >    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                              </svg>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                  <label for="exampleDropdownFormEmail1">Correo</label>
+                                  <input type="email" class="form-control" id="Email1" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleDropdownFormPassword1">Contraseña</label>
+                                  <input type="password" class="form-control" id="Password1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                  <label class="form-check-label" for="dropdownCheck">
+                                    Recordarme
+                                  </label>
+                                </div>
+                                <button type="submit" onclick="login()" class="btn btn-primary">Iniciar Sesión</button>
+                              </form>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="login.html">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="parallax">
+            
+            
+                <div class="card unique-card">
+                    <img class="card-img-top" src="images/TourCyT.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> <a href="destino.html">Viña Concha y Toro</a> </h5>
+                        <p class="card-text">Tour en Viña Concha y Toro con degustación</p>
+                        <p class="card-text"><small class="text-muted">Precio desde:$18.000</small></p>
+                        <p class="card-text text-muted">Conoce la esencia de grandes vinos chilenos
+
+                            En Chile, el vino traspasa fronteras y conquista a los paladares más exigentes. Entre sus vinícolas que reciben turistas de todas las partes del mundo, Concha y Toro se destaca como la más grande en América Latina. En este tour vas a recorrer sus jardines y bodegas, además de apreciar la calidad de los vinos.
+                            
+                            Descubre la experiencia
+                            • Al llegar a vinícola, harás una parada en la icónica bodega Casillero del Diablo, donde comenzó la leyenda del vino.
+                            • En su bello jardín de fines del siglo XIX, conocerás la antigua residencia de verano de la familia Concha y Toro.
+                            • También vas a explorar un pintoresco jardín con más de 25 cepas de uvas viníferas.
+                            • Además, podrás disfrutar de la imponente vista panorámica del Valle del Maipo desde el viñedo de Pirque Viejo.
+                            • Esta experiencia se vuelve aún más completa con momentos de degustación de sabores seleccionados.
+                        </p>
+
+
+                        <div class="input-group">
+                            <label for="adultos" >Adultos:</label>
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus button--lessmore"  data-type="minus" data-field="">
+                                          -
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="10">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus button--lessmore " data-type="plus" data-field="">
+                                            +
+                                        </button>
+                                    </span>
+                            <button class="button--unique"> Agregar al carro </button>
+                        </div>
+                        
+                
+                
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
+        <script src="app2.js"></script>
+	    <script src="js/login.js"></script>
+        <script src="sumarcarro.js"></script>
+        
+            
+    </body>
+</html>
+
